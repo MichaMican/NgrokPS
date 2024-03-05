@@ -2,6 +2,8 @@
 PowerShell Module to simplify Ngrok connection when working with multiple auth-tokens.
 
 # Dependencies
+- Windows OS
+- PowerShell (Tested on 5.1 & 7.4.1)
 - [Ngrok](https://ngrok.com/download) installed and added to PATH
 - [CredentialManager](https://www.powershellgallery.com/packages/CredentialManager/2.0) Module installed
 
@@ -18,3 +20,6 @@ Parameters:
 - `-NgrokRegion` - OPTIONAL - string - region of ngrok; DEFAULT: eu
 - `-ForceProfileOverwrite` - OPTIONAL - switch - Force setup dialog for profile creation (same as if Profile is choosen, which does not exist - hence only on PS 5.X)
 - `-HttpProtocol` - OPTIONAL - `http` | `https` - localhost target http protocol - DEFAULT: https
+
+## Defaults
+- You can create a User Environmentvariable `NGROKPS_DEFAULT_PROFILE` specifying the default `HostProfile`
